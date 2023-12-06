@@ -108,12 +108,34 @@ main {
 
 .Descrip {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   font-size: medium;
-  margin-left: 5%;
-  margin-right: 5%;
+  height: 25%;
+}
+
+.Descrip .Primero {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+}
+
+.Descrip .Segundo {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+}
+
+.Descrip img {
+  margin-right: 10%;
+  transform: scale(500%);
 }
 
 .img {
@@ -195,6 +217,45 @@ header a:hover {
     0 0 42px rgb(255, 255, 255), 0 0 151px rgb(255, 255, 255);
 }
 
+.allmyproyects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15%;
+}
+
+.allmyproyects p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+}
+
+.Descrip a {
+  text-decoration: none;
+  color: white;
+}
+
+.Descrip a:hover {
+  transform: scale(102%);
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
+    0 0 42px rgb(255, 255, 255), 0 0 151px rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 767px) {
+  .Descrip {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    height: 25%;
+  }
+  .content {
+    width: 70%;
+  }
+}
+
 @media screen and (min-width: 767px) and (max-width: 1023px) {
   .content {
     width: 70%;
@@ -219,7 +280,7 @@ header a:hover {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .Descrip {
     display: flex;
     flex-direction: column;
@@ -242,7 +303,7 @@ header a:hover {
   }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 320px) {
   .Descrip {
     display: flex;
     flex-direction: column;
@@ -255,7 +316,7 @@ header a:hover {
     width: 90%;
   }
   .img {
-    height: 30%;
+    height: 40%;
   }
   .img img {
     height: 60%;
@@ -278,28 +339,5 @@ header a:hover {
     align-items: center;
     justify-content: center;
     font-size: smaller;
-  }
-  .Descrip {
-    height: 50%;
-    font-size: 85%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .titulo2 {
-    height: 18%;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .content {
-    width: 50%;
-  }
-  .Section2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    width: 50%;
   }
 }
